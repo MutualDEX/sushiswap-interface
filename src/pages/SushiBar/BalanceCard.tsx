@@ -82,7 +82,7 @@ export default function BalanceCard({
                                 text-caption2 font-bold cursor-pointer
                             `}
                         >
-                            {i18n._(t`Your SushiBar Stats`)}
+                            {i18n._(t`Your BigBank Stats`)}
                         </a>
                     )}
                 </div>
