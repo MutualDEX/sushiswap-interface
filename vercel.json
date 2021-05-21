@@ -24,12 +24,7 @@
                     "key": "X-XSS-Protection",
                     "value": "1; mode=block"
                 }
-            ]
+             ]
         }
-    ],
-    "redirects": [
-        { "source": "/stake", "destination": "/sushibar", "permanent": true },
-        { "source": "/migrate/v2", "destination": "/migrate", "permanent": true }
-    ],
- ]
+    ]
 }
