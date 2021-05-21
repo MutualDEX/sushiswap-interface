@@ -35,7 +35,7 @@ export default function BalanceCard({
                             <p className="text-caption2 md:text-lg font-bold text-high-emphesis">
                                 {formatFromBalance(xSushiBalance.value)}
                             </p>
-                            <p className="text-caption2 md:text-caption text-primary">xSUSHI</p>
+                            <p className="text-caption2 md:text-caption text-primary">xBGSP</p>
                         </div>
                     </div>
                 </div>
@@ -54,7 +54,7 @@ export default function BalanceCard({
                                 {formatFromBalance(sushiBalance.value)}
                                 {/* {sushiEarnings.toPrecision(7)} */}
                             </p>
-                            <p className="text-caption2 md:text-caption text-primary">SUSHI</p>
+                            <p className="text-caption2 md:text-caption text-primary">BGSP</p>
                         </div>
                     </div>
                 </div>
