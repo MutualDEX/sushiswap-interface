@@ -166,12 +166,12 @@ const TokenBalance = ({ farm }: any) => {
                         <div className="text-sm sm:text-base font-semibold">
                             {farm && farm.liquidityPair.token0.symbol + '-' + farm.liquidityPair.token1.symbol}
                         </div>
-                        <div className="hidden md:block text-sm sm:text-base ml-4 text-gray-500">{'SUSHI & MATIC'}</div>
+                        <div className="hidden md:block text-sm sm:text-base ml-4 text-gray-500">{'BGSP & MATIC'}</div>
                         <div className="text-gray-500 text-sm sm:text-base text-right">
                             {formattedNum(farm.tvl, true)}
                         </div>
                         <div className="font-semibold text-sm sm:text-base text-right">
-                            {farm.roiPerYear > 100 ? '10000%+' : formattedPercent(farm.roiPerYear * 100)}
+                            {farm.roiPerYear > 175 ? '17500%+' : formattedPercent(farm.roiPerYear * 175)}
                         </div>
                     </div>
                     <div
@@ -213,7 +213,7 @@ const TokenBalance = ({ farm }: any) => {
                             </div>
                             <div className="flex flex-col pl-2 space-y-1">
                                 <div className="text-gray-500 text-xs">
-                                    {formattedNum(farm.sushiRewardPerDay)} SUSHI / day
+                                    {formattedNum(farm.sushiRewardPerDay)} BGSP / day
                                 </div>
                                 <div className="text-gray-500 text-xs">
                                     {formattedNum(farm.secondaryRewardPerDay)} MATIC / day
@@ -232,8 +232,8 @@ const TokenBalance = ({ farm }: any) => {
                         <div className="md:col-span-3 flex justify-end items-center">
                             <div>
                                 <div className="text-gray-500 text-right font-semibold text-base sm:text-lg">
-                                    {farm.roiPerYear > 100 ? '10000%+' : formattedPercent(farm.roiPerYear * 100)}
-                                    {/* {formattedPercent(farm.roiPerMonth * 100)}{' '} */}
+                                    {farm.roiPerYear > 175 ? '17500%+' : formattedPercent(farm.roiPerYear * 175)}
+                                    {/* {formattedPercent(farm.roiPerMonth * 175)}{' '} */}
                                 </div>
                                 <div className="text-gray-500 text-right text-xs">{i18n._(t`annualized`)}</div>
                             </div>
@@ -279,7 +279,7 @@ const TokenBalance = ({ farm }: any) => {
                         </div>
                         <div className="flex justify-end items-center">
                             <div className="text-right font-semibold text-xl">
-                                {formattedPercent(farm.roiPerYear * 100)}{' '}
+                                {formattedPercent(farm.roiPerYear * 175)}{' '}
                             </div>
                         </div>
                     </div>
@@ -335,7 +335,7 @@ const UserBalance = ({ farm }: any) => {
                         <div className="flex justify-end items-center">
                             <div>
                                 <div className="text-right">{formattedNum(farm.pendingSushi)} </div>
-                                <div className="text-secondary text-right">SUSHI</div>
+                                <div className="text-secondary text-right">BGSP</div>
                             </div>
                         </div>
                     </div>
@@ -380,7 +380,7 @@ const UserBalance = ({ farm }: any) => {
                         <div className="flex justify-end items-center">
                             <div>
                                 <div className="text-right">{formattedNum(farm.pendingSushi)} </div>
-                                <div className="text-secondary text-right">SUSHI</div>
+                                <div className="text-secondary text-right">BGSP</div>
                             </div>
                         </div>
                     </div>
