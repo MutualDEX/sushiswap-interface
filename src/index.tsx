@@ -5,7 +5,7 @@ import './bootstrap'
 
 import { createWeb3ReactRoot, Web3ReactProvider } from '@web3-react/core'
 import { KashiProvider } from 'kashi'
-import React, { StrictMode } from 'react'
+import React from 'react'
 import { isMobile } from 'react-device-detect'
 import ReactDOM from 'react-dom'
 import ReactGA from 'react-ga'
