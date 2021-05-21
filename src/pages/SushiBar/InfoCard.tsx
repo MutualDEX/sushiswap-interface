@@ -34,7 +34,7 @@ export default function InfoCard() {
                     <img src={XSushiSignSmall} alt="xsushi sign" />
                 </div> */}
             </div>
-            <div className="text-gray-500 text-sm leading-5 md:text-caption max-w-lg mb-2 md:mb-4 pr-3 md:pr-0">
+            <div className="text-white-500 text-sm leading-5 md:text-caption max-w-lg mb-2 md:mb-4 pr-3 md:pr-0">
                 {t`For every swap on the exchange on every chain, 0.05% of the swap fees are distributed as BGSP
                 proportional to your share of the BigBank. When your BGSP is staked into the BigBank, you receive
                 xBGSP in return for voting rights and a fully composable token that can interact with other protocols.
