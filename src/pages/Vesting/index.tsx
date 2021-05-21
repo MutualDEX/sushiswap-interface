@@ -58,7 +58,7 @@ export const CardSection = styled(AutoColumn)<{ disabled?: boolean }>`
 `
 
 export const DataCard = styled(AutoColumn)<{ disabled?: boolean }>`
-    background: radial-gradient(76.02% 75.41% at 1.84% 0%, #ff007a 0%, #0094ec 100%);
+    background: radial-gradient(76.02% 75.41% at 1.84% 0%, #FFFFFF 0%, #0000b8 100%);
     border-radius: ${({ theme }) => theme.borderRadius};
     width: 100%;
     position: relative;
@@ -144,18 +144,18 @@ export default function ClaimModal() {
 
     let VaultImage
     if (!pendingTreasurySignature && Number(unclaimedAmount?.toFixed(8)) > 0) {
-        VaultImage = 'https://raw.githubusercontent.com/sushiswap/sushi-content/master/images/sushi-vault-reverse.png'
+        VaultImage = 'https://raw.githubusercontent.com/MutualDEX/sushiswap-interface/master/src/assets/svg/logo.svg'
     } else if (!pendingTreasurySignature && Number(unclaimedAmount?.toFixed(8)) <= 0) {
-        VaultImage = 'https://raw.githubusercontent.com/sushiswap/sushi-content/master/images/vesting-safe-off.png'
+        VaultImage = 'https://raw.githubusercontent.com/MutualDEX/sushiswap-interface/master/src/assets/svg/logo.svg'
     } else if (pendingTreasurySignature) {
-        VaultImage = 'https://raw.githubusercontent.com/sushiswap/sushi-content/master/images/vesting-safe-closed.png'
+        VaultImage = 'https://raw.githubusercontent.com/MutualDEX/sushiswap-interface/master/src/assets/svg/logo.svg'
     }
 
     return (
         <>
             {' '}
             <Helmet>
-                <title>{i18n._(t`Vesting`)} | Sushi</title>
+                <title>{i18n._(t`Vesting`)} | BigSwap</title>
             </Helmet>
             <PageWrapper>
                 <>
@@ -218,9 +218,9 @@ export default function ClaimModal() {
                                 <CardSection gap="sm">
                                     <RowBetween>
                                         <TYPE.white fontWeight={500} color={theme.text1}>
-                                            {i18n._(t`Your Claimable SUSHI this Week`)}
+                                            {i18n._(t`Your Claimable BigSwap Tokens this Week`)}
                                         </TYPE.white>
-                                        <QuestionHelper text="Your Vested SUSHI will be released each week for the next 6 months. The amount released each week is determined by your historical farming rewards. You do not need to harvest each week as unclaimed amounts from each week will continue to accrue onto the next." />
+                                        <QuestionHelper text="Your Vested BGSP will be released each week for the next 6 months. The amount released each week is determined by your historical farming rewards. You do not need to harvest each week as unclaimed amounts from each week will continue to accrue onto the next." />
                                     </RowBetween>
                                     {/* <div style={{ display: 'flex', alignItems: 'baseline' }}> */}
                                     <div style={{ alignItems: 'baseline' }}>
@@ -261,7 +261,7 @@ export default function ClaimModal() {
                                         {pendingTreasurySignature ? (
                                             <Dots>{i18n._(t`Pending Treasury Transfer`)}</Dots>
                                         ) : (
-                                            <> {claimConfirmed ? i18n._(t`Claimed`) : i18n._(t`Claim SUSHI`)}</>
+                                            <> {claimConfirmed ? i18n._(t`Claimed`) : i18n._(t`Claim BGSP`)}</>
                                         )}
 
                                         {attempting && <Loader stroke="white" style={{ marginLeft: '10px' }} />}
@@ -272,7 +272,7 @@ export default function ClaimModal() {
                                 <CardSection gap="md">
                                     <RowBetween style={{ marginBottom: '5px' }}>
                                         <TYPE.white fontWeight={500} color={theme.text1}>
-                                            {i18n._(t`Things you can do with your SUSHI`)}
+                                            {i18n._(t`Things you can do with your BGSP`)}
                                         </TYPE.white>
                                     </RowBetween>
                                     <LightCard
@@ -285,12 +285,12 @@ export default function ClaimModal() {
                                                 <AutoRow>
                                                     <AutoRow marginBottom="2px">
                                                         <TYPE.body fontWeight={500}>
-                                                            {i18n._(t`Stake SUSHI for xSUSHI`)}
+                                                            {i18n._(t`Stake BGSP for xBGSP`)}
                                                         </TYPE.body>
                                                     </AutoRow>
                                                     <AutoRow>
                                                         <TYPE.darkGray fontSize=".75rem">
-                                                            {t`Gain governance rights with xSUSHI and earn 5% APR (0.05% of
+                                                            {t`Gain governance rights with xBGSP and earn 5% APR (0.05% of
                                                             all swaps from all chains)`}
                                                         </TYPE.darkGray>
                                                     </AutoRow>
@@ -314,7 +314,7 @@ export default function ClaimModal() {
                                                     </AutoRow>
                                                     <AutoRow>
                                                         <TYPE.darkGray fontSize=".75rem">
-                                                            {t`Stake into xSUSHI add collateral as axSUSHI on Aave all in
+                                                            {t`Stake into xBGSP add collateral as axBGSP on Aave all in
                                                             one click`}
                                                         </TYPE.darkGray>
                                                     </AutoRow>
@@ -329,7 +329,7 @@ export default function ClaimModal() {
                                                 <AutoRow>
                                                     <AutoRow marginBottom="2px">
                                                         <TYPE.body fontWeight={500}>
-                                                            {i18n._(t`Deposit SUSHI into BentoBox`)}
+                                                            {i18n._(t`Deposit BGSP into the Big Vault`)}
                                                         </TYPE.body>
                                                     </AutoRow>
                                                     <AutoRow>
