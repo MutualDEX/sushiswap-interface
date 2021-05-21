@@ -49,7 +49,7 @@ export function colors(darkMode: boolean): Colors {
         // backgrounds / greys
         bg1: darkMode ? '#202231' : '#FFFFFF',
         bg2: darkMode ? 'rgb(22, 21, 34)' : '#F7F8FA',
-        bg3: darkMode ? '#2a3a50' : '#EDEEF2',
+        bg3: darkMode ? '#2a3a50' : '#0000b8',
         bg4: darkMode ? '#3a506f' : '#CED0D9',
         bg5: darkMode ? '#6C7284' : '#888D9B',
 
@@ -58,8 +58,8 @@ export function colors(darkMode: boolean): Colors {
         advancedBG: darkMode ? 'rgba(0,0,0,0.1)' : 'rgba(255,255,255,0.6)',
 
         //primary colors
-        primary1: darkMode ? '#0094ec' : '#0e0e23',
-        primary2: darkMode ? '#0097fb' : '#FF8CC3',
+        primary1: darkMode ? '#0094ec' : '#0000b8',
+        primary2: darkMode ? '#0097fb' : '#0000b8',
         primary3: darkMode ? '#00aff5' : '#FF99C9',
         primary4: darkMode ? '#376bad70' : '#F6DDE8',
         primary5: darkMode ? '#153d6f70' : '#ebebeb',
@@ -69,7 +69,7 @@ export function colors(darkMode: boolean): Colors {
 
         // secondary colors
         secondary1: darkMode ? '#0094ec' : '#ff007a',
-        secondary2: darkMode ? '#17000b26' : '#F6DDE8',
+        secondary2: darkMode ? '#17000b26' : '#0000b8',
         secondary3: darkMode ? '#17000b26' : '#ebebeb',
 
         // other
@@ -79,7 +79,7 @@ export function colors(darkMode: boolean): Colors {
         green1: '#27AE60',
         yellow1: '#FFE270',
         yellow2: '#F3841E',
-        blue1: '#0094ec',
+        blue1: '#0000b8',
 
         borderRadius: '10px'
 
@@ -172,7 +172,7 @@ export const TYPE = {
 export const ThemedGlobalStyle = createGlobalStyle`
 html {
   color: #BFBFBF;
-  background-color: #0D0415;
+  background-color: #0000b8;
 }
 
 input, textarea {
