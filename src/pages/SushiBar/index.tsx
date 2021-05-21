@@ -24,7 +24,7 @@ export default function XSushi() {
     return (
         <>
             <Helmet>
-                <title>xSUSHI | Sushi</title>
+                <title>xBGSP | Bgsp</title>
             </Helmet>
             <div className="flex flex-col w-full">
                 <div className="flex mb-6 justify-center">
