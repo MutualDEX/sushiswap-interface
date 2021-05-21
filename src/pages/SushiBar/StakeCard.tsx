@@ -160,7 +160,7 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
                         }}
                     >
                         <div className={activeTab === 0 ? activeTabStyle : inactiveTabStyle}>
-                            <p>{i18n._(t`Stake SUSHI`)}</p>
+                            <p>{i18n._(t`Stake BGSP`)}</p>
                         </div>
                     </div>
                     <div
