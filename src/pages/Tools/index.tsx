@@ -30,7 +30,7 @@ export const CardSection = styled(AutoColumn)<{ disabled?: boolean }>`
 `
 
 export const DataCard = styled(AutoColumn)<{ disabled?: boolean }>`
-    background: radial-gradient(76.02% 75.41% at 1.84% 0%, #ff007a 0%, #0094ec 100%);
+    background: radial-gradient(76.02% 75.41% at 1.84% 0%, #ffffff 0%, #0000b8 100%);
     border-radius: ${({ theme }) => theme.borderRadius};
     width: 100%;
     position: relative;
@@ -86,7 +86,7 @@ export default function Pool() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Tools`)} | Sushi</title>
+                <title>{i18n._(t`Tools`)} | BigSwap</title>
             </Helmet>
             <PageWrapper>
                 <SwapPoolTabs active={'pool'} />
@@ -95,7 +95,7 @@ export default function Pool() {
                         <AutoColumn gap="md">
                             <RowBetween>
                                 <TYPE.white fontWeight={600} color={theme.text1}>
-                                    {i18n._(t`Helpful Sushi Tools`)}
+                                    {i18n._(t`Helpful BigSwap Tools`)}
                                 </TYPE.white>
                             </RowBetween>
                             <RowBetween>
@@ -148,7 +148,7 @@ export default function Pool() {
                                     <RowFixed>
                                         {/* <DoubleCurrencyLogo currency0={currency0} currency1={currency1} margin={true} size={20} /> */}
                                         <Text fontWeight={500} fontSize={14}>
-                                            {i18n._(t`One click SUSHI → xSUSHI → aXSUSHI`)}
+                                            {i18n._(t`One click BGSP → xBGSP → aXBGSP`)}
                                         </Text>
                                     </RowFixed>
                                     <RowFixed>
