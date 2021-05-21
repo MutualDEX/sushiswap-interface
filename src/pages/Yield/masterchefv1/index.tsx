@@ -35,8 +35,8 @@ export default function Yield(): JSX.Element {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Yield`)} | Sushi</title>
-                <meta name="description" content="Farm SUSHI by staking LP (Liquidity Provider) tokens" />
+                <title>{i18n._(t`Yield`)} | BigSwap</title>
+                <meta name="description" content="Farm BigSwap Tokens (BGSP) by staking LP (Liquidity Provider) tokens" />
             </Helmet>
             <div className="container max-w-2xl mx-auto">
                 <Card
@@ -163,7 +163,7 @@ const TokenBalance = ({ farm }: any) => {
                         </div>
                         <div className="flex justify-end items-center">
                             <div className="text-right font-semibold text-xl">
-                                {farm.roiPerYear > 10000 ? '10000%+' : formattedPercent(farm.roiPerYear * 100)}
+                                {farm.roiPerYear > 17500 ? '17500%+' : formattedPercent(farm.roiPerYear * 175)}
                             </div>
                         </div>
                     </div>
@@ -207,7 +207,7 @@ const TokenBalance = ({ farm }: any) => {
                         </div>
                         <div className="flex justify-end items-center">
                             <div className="text-right font-semibold text-xl">
-                                {farm.roiPerYear > 10000 ? '10000%+' : formattedPercent(farm.roiPerYear * 100)}
+                                {farm.roiPerYear > 17500 ? '17500%+' : formattedPercent(farm.roiPerYear * 175)}
                             </div>
                         </div>
                     </div>
@@ -263,7 +263,7 @@ const UserBalance = ({ farm }: any) => {
                         <div className="flex justify-end items-center">
                             <div>
                                 <div className="text-right">{formattedNum(farm.pendingSushi)} </div>
-                                <div className="text-secondary text-right">SUSHI</div>
+                                <div className="text-secondary text-right">BGSP</div>
                             </div>
                         </div>
                     </div>
@@ -308,7 +308,7 @@ const UserBalance = ({ farm }: any) => {
                         <div className="flex justify-end items-center">
                             <div>
                                 <div className="text-right">{formattedNum(farm.pendingSushi)} </div>
-                                <div className="text-secondary text-right">SUSHI</div>
+                                <div className="text-secondary text-right">BGSP</div>
                             </div>
                         </div>
                     </div>
