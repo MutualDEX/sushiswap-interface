@@ -52,11 +52,11 @@ export default function SushiBarTransactions() {
                     <div className="hidden md:flex justify-between text-caption mt-4">
                         <div className="flex items-center">
                             <p className="text-primary font-bold">Total gain:&nbsp;</p>
-                            <p className="text-high-emphesis font-bold">{`${mock.totalGain} SUSHI`}</p>
+                            <p className="text-high-emphesis font-bold">{`${mock.totalGain} BGSP`}</p>
                         </div>
                         <div className="flex items-center">
                             <p className="text-primary">Time weighted average balance staked:&nbsp;</p>
-                            <p className="text-high-emphesis font-bold">{`${mock.avgBalStaked} SUSHI`}</p>
+                            <p className="text-high-emphesis font-bold">{`${mock.avgBalStaked} BGSP`}</p>
                         </div>
                     </div>
                 </div>
