@@ -309,12 +309,12 @@ export default function ClaimModal() {
                                                 <AutoRow>
                                                     <AutoRow marginBottom="2px">
                                                         <TYPE.body fontWeight={500}>
-                                                            {i18n._(t`Stack Yields with SAAVE`)}
+                                                            {i18n._(t`Stack Yields with SAVE`)}
                                                         </TYPE.body>
                                                     </AutoRow>
                                                     <AutoRow>
                                                         <TYPE.darkGray fontSize=".75rem">
-                                                            {t`Stake into xBGSP add collateral as axBGSP on Aave all in
+                                                            {t`Stake into xBGSP add collateral as axBGSP on SAVE all in
                                                             one click`}
                                                         </TYPE.darkGray>
                                                     </AutoRow>
@@ -335,7 +335,7 @@ export default function ClaimModal() {
                                                     <AutoRow>
                                                         <TYPE.darkGray fontSize=".75rem">
                                                             {t`(COMING SOON) Accrue automatic yield through flash loans and
-                                                            SUSHI strategies`}
+                                                            BGSP strategies`}
                                                         </TYPE.darkGray>
                                                     </AutoRow>
                                                 </AutoRow>
