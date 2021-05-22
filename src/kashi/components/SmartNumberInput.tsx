@@ -6,7 +6,7 @@ import { Input as NumericalInput } from 'components/NumericalInput'
 import { BigNumber } from '@ethersproject/bignumber'
 
 type SmartNumberInputProps = {
-    color: 'blue' | 'pink'
+    color: 'blue' | 'blue'
     token: any
     value: string
     setValue: any
