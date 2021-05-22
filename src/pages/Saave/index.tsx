@@ -46,8 +46,8 @@ export default function Saave() {
     return (
         <>
             <Helmet>
-                <title>Saave | Sushi</title>
-                <meta name="description" content="Migrate SUSHI -> xSUSHI -> axSUSHI" />
+                <title>Save | BigSwap</title>
+                <meta name="description" content="Migrate BGSP -> xBGSP -> axBGSP" />
             </Helmet>
             <PageWrapper>
                 <VoteCard>
@@ -55,13 +55,13 @@ export default function Saave() {
                         <AutoColumn gap="md">
                             <RowBetween>
                                 <TYPE.white fontWeight={600} color={theme.text1}>
-                                    {i18n._(t`SAAVE: Stack your yields in one transaction`)}
+                                    {i18n._(t`SAVE: Stack your yields in one transaction`)}
                                 </TYPE.white>
                             </RowBetween>
                             <RowBetween>
                                 <TYPE.white fontSize={14} color={theme.text2}>
                                     {i18n._(
-                                        t`Stake your SUSHI into xSUSHI for ~5% APY. Deposit your xSUSHI into Aave as aXSUSHI to earn collateral interest and borrowing power. All in one click.`
+                                        t`Stake your BGSP into xBGSP for ~5% APY. Deposit your xBGSP into Save as aXBGSP to earn collateral interest and borrowing power. All in one click.`
                                     )}
                                 </TYPE.white>
                             </RowBetween>
@@ -86,7 +86,7 @@ export default function Saave() {
                             <RowBetween>
                                 <TYPE.white fontSize={14} color={theme.text2}>
                                     {i18n._(
-                                        t`To withdraw into SUSHI, go to Aave and remove axSUSHI as collateral and then to SushiBar to unstake. A full unwind will be avaialble soon.`
+                                        t`To withdraw into BGSP, go to Save and remove axBGSP as collateral and then to BigBank to unstake. A full unwind will be avaialble soon.`
                                     )}
                                 </TYPE.white>
                             </RowBetween>
