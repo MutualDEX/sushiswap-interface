@@ -11,13 +11,11 @@ const SIZE = {
 const FILLED = {
     default: 'bg-transparent',
     blue: 'bg-blue bg-opacity-80 w-full rounded text-base text-high-emphesis hover:bg-opacity-100',
-    blue: 'bg-blue bg-opacity-80 w-full rounded text-base text-high-emphesis hover:bg-opacity-100',
     gradient: 'w-full text-high-emphesis bg-gradient-to-r from-blue to-blue'
 }
 
 const OUTLINED = {
     default: 'bg-transparent',
-    blue: 'bg-blue bg-opacity-20 outline-blue rounded text-xs text-blue hover:bg-opacity-40',
     blue: 'bg-blue bg-opacity-20 outline-blue rounded text-xs text-blue hover:bg-opacity-40',
     gradient: 'bg-gradient-to-r from-blue to-blue'
 }
