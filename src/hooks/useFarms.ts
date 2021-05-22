@@ -102,7 +102,7 @@ const useFarms = () => {
                     const liquidityPosition = liquidityPositions.find(
                         (liquidityPosition: any) => liquidityPosition.pair.id === pair.id
                     )
-                    const blocksPerHour = 3600 / Number(averageBlockTime)
+                    const blocksPerHour = 4000 / Number(averageBlockTime)
                     const balance = Number(pool.balance / 1e18)
                     const totalSupply = pair.totalSupply > 0 ? pair.totalSupply : 0.1
                     const reserveUSD = pair.reserveUSD > 0 ? pair.reserveUSD : 0.1
@@ -144,7 +144,7 @@ const useFarms = () => {
                         roiPerDay,
                         roiPerMonth,
                         roiPerYear,
-                        rewardPerThousand: 1 * roiPerDay * (1000 / sushiPrice),
+                        rewardPerThousand: 1 * roiPerDay * (1750 / sushiPrice),
                         tvl: liquidityPosition?.liquidityTokenBalance
                             ? (pair.reserveUSD / pair.totalSupply) * liquidityPosition.liquidityTokenBalance
                             : 0.1
