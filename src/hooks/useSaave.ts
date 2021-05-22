@@ -34,7 +34,7 @@ const useMaker = () => {
         if (account && saaveContract && sushiContract) {
             fetchAllowance()
         }
-        const refreshInterval = setInterval(fetchAllowance, 10000)
+        const refreshInterval = setInterval(fetchAllowance, 17500)
         return () => clearInterval(refreshInterval)
     }, [account, fetchAllowance, saaveContract, sushiContract])
 
