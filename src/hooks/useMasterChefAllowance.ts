@@ -34,7 +34,7 @@ const useAllowance = (lpAddress: string) => {
         if (account && masterChefContract && lpContract) {
             fetchAllowance()
         }
-        const refreshInterval = setInterval(fetchAllowance, 10000)
+        const refreshInterval = setInterval(fetchAllowance, 17500)
         return () => clearInterval(refreshInterval)
     }, [account, masterChefContract, lpContract, fetchAllowance])
 
