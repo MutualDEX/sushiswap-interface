@@ -60,7 +60,7 @@ export default function SmartNumberInput({
                         <Button
                             variant="outlined"
                             size="small"
-                            color={blue}
+                            color={color}
                             className={'disabled:cursor-not-allowed focus:ring focus:ring-' + color}
                             onClick={() => {
                                 setUseBento(!useBento)
