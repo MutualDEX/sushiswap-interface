@@ -406,7 +406,7 @@ export default function RemoveLiquidity({
             <>
                 <RowBetween>
                     <Text color={theme.text2} fontWeight={500} fontSize={16}>
-                        {i18n._(t`SUSHI ${currencyA?.getSymbol(chainId)}/${currencyB?.getSymbol(chainId)} Burned`)}
+                        {i18n._(t`BGSP ${currencyA?.getSymbol(chainId)}/${currencyB?.getSymbol(chainId)} Burned`)}
                     </Text>
                     <RowFixed>
                         <DoubleCurrencyLogo currency0={currencyA} currency1={currencyB} margin={true} />
@@ -504,7 +504,7 @@ export default function RemoveLiquidity({
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Remove Liquidity`)} | Sushi</title>
+                <title>{i18n._(t`Remove Liquidity`)} | BigSwap</title>
             </Helmet>
 
             <div className="w-full max-w-2xl mb-5 px-4">
