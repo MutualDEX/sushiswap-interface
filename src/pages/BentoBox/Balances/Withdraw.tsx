@@ -38,7 +38,7 @@ function Withdraw({ tokenAddress, tokenSymbol }: { tokenAddress: string; tokenSy
                 {account && (
                     <Button
                         variant="outlined"
-                        color="pink"
+                        color="blue"
                         size="small"
                         onClick={() => {
                             setValue(balance.value.toFixed(balance.decimals))
