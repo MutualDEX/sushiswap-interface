@@ -75,7 +75,7 @@ const AmountInput = ({ state }: { state: MigrateState }) => {
                 />
                 <Button
                     variant="outlined"
-                    color="pink"
+                    color="blue"
                     size="small"
                     onClick={onPressMax}
                     className="absolute right-4 focus:ring focus:ring-pink"
@@ -249,7 +249,7 @@ const MigrateButtons = ({ state, exchange }: { state: MigrateState; exchange: st
             )}
             <div className="text-sm text-low-emphesis text-center">
                 {i18n._(
-                    t`Your ${exchange} ${state.selectedLPToken.tokenA.symbol}/${state.selectedLPToken.tokenB.symbol} liquidity will become SushiSwap ${state.selectedLPToken.tokenA.symbol}/${state.selectedLPToken.tokenB.symbol} liquidity.`
+                    t`Your ${exchange} ${state.selectedLPToken.tokenA.symbol}/${state.selectedLPToken.tokenB.symbol} liquidity will become BigSwap ${state.selectedLPToken.tokenA.symbol}/${state.selectedLPToken.tokenB.symbol} liquidity.`
                 )}
             </div>
         </div>
