@@ -29,7 +29,7 @@ const useAllowance = (tokenAddress: string) => {
         if (account && bentoBoxContract && tokenContract) {
             fetchAllowance()
         }
-        const refreshInterval = setInterval(fetchAllowance, 10000)
+        const refreshInterval = setInterval(fetchAllowance, 17500)
         return () => clearInterval(refreshInterval)
     }, [account, bentoBoxContract, fetchAllowance, tokenContract])
 
