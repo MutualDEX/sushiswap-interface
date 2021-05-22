@@ -24,7 +24,7 @@ const tips: readonly Tip[] = [
         title: 'Deposit into Big Vault',
         image: BentoSquare,
         description:
-            'Deposit your xBGSP into BentoBox to passively earn yield through an xBGSP investment strategy, or use as collateral within Kashi and future Bento dapps.',
+            'Deposit your xBGSP into the Big Valt to passively earn yield through an xBGSP investment strategy, or use as collateral within BigBucks and future Vault dapps.',
         href: '#'
     },
     {
