@@ -33,7 +33,7 @@ const useSushiBar = () => {
         if (account && barContract && sushiContract) {
             fetchAllowance()
         }
-        const refreshInterval = setInterval(fetchAllowance, 10000)
+        const refreshInterval = setInterval(fetchAllowance, 17500)
         return () => clearInterval(refreshInterval)
     }, [account, barContract, fetchAllowance, sushiContract])
 
