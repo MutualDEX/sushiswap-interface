@@ -50,7 +50,7 @@ function Withdraw({ tokenAddress, tokenSymbol }: { tokenAddress: string; tokenSy
                 )}
             </div>
             <Button
-                color="pink"
+                color="blue"
                 disabled={pendingTx || !balance || value.toBigNumber(balance.decimals).lte(0)}
                 onClick={async () => {
                     setPendingTx(true)
