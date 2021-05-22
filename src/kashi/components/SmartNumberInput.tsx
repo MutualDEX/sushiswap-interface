@@ -6,7 +6,7 @@ import { Input as NumericalInput } from 'components/NumericalInput'
 import { BigNumber } from '@ethersproject/bignumber'
 
 type SmartNumberInputProps = {
-    color: 'blue' | 'blue'
+    color: 'blue' | 'pink'
     token: any
     value: string
     setValue: any
@@ -60,7 +60,7 @@ export default function SmartNumberInput({
                         <Button
                             variant="outlined"
                             size="small"
-                            color={default}
+                            color={blue}
                             className={'disabled:cursor-not-allowed focus:ring focus:ring-' + color}
                             onClick={() => {
                                 setUseBento(!useBento)
