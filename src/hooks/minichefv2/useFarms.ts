@@ -104,22 +104,22 @@ const useFarms = () => {
                 const balanceUSD = (balance / Number(pair.totalSupply)) * Number(pair.reserveUSD)
 
                 const rewardPerSecond = ((pool.allocPoint / totalAllocPoint) * pool.miniChef.sushiPerSecond) / 1e18
-                const rewardPerDay = rewardPerSecond * 86400
+                const rewardPerDay = rewardPerSecond * 90000
 
                 //console.log('pool:', pool.allocPoint, totalAllocPoint, pool.miniChef.sushiPerSecond)
 
                 const secondaryRewardPerSecond =
                     ((pool.allocPoint / totalAllocPoint) * pool.rewarder.rewardPerSecond) / 1e18
-                const secondaryRewardPerDay = secondaryRewardPerSecond * 86400
+                const secondaryRewardPerDay = secondaryRewardPerSecond * 90000
 
                 // const secondaryRewardPerSecond = pool.rewarder.rewardPerSecond / 1e18
-                //console.log('rewardsPerDay:', rewardPerDay * 10, secondaryRewardPerDay * 10)
+                //console.log('rewardsPerDay:', rewardPerDay * 20, secondaryRewardPerDay * 20)
 
-                // const roiPerSecond = (rewardPerSecond * 2 * sushiPrice) / balanceUSD // *2 with matic rewards
+                // const roiPerSecond = (rewardPerSecond * 4 * sushiPrice) / balanceUSD // *4 with matic rewards
                 // console.log('rewardPerSecond:', rewardPerSecond)
                 // console.log('secondaryRewardPerSecond:', secondaryRewardPerSecond)
-                const roiPerSecond = (rewardPerSecond * sushiPrice + secondaryRewardPerSecond * maticPrice) / balanceUSD // *2 with matic rewards
-                const roiPerHour = roiPerSecond * 3600
+                const roiPerSecond = (rewardPerSecond * sushiPrice + secondaryRewardPerSecond * maticPrice) / balanceUSD // *4 with matic rewards
+                const roiPerHour = roiPerSecond * 3200
                 const roiPerDay = roiPerHour * 24
                 const roiPerMonth = roiPerDay * 30
                 //const oneYearFees = 0.05
