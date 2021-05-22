@@ -293,7 +293,7 @@ export default function Repay({ pair }: RepayProps) {
             <div className="text-3xl text-high-emphesis mt-6 mb-4">Repay {pair.asset.symbol}</div>
 
             <SmartNumberInput
-                color="pink"
+                color="blue"
                 token={pair.asset}
                 value={displayRepayValue}
                 setValue={setRepayAssetValue}
@@ -311,7 +311,7 @@ export default function Repay({ pair }: RepayProps) {
             />
 
             <SmartNumberInput
-                color="pink"
+                color="blue"
                 token={pair.collateral}
                 value={displayRemoveValue}
                 setValue={setRemoveCollateralValue}
@@ -332,7 +332,7 @@ export default function Repay({ pair }: RepayProps) {
 
             {!pair.currentUserBorrowAmount.value.isZero() && (
                 <SwapCheckbox
-                    color="pink"
+                    color="blue"
                     swap={swap}
                     setSwap={(value: boolean) => {
                         resetRepayState()
@@ -345,7 +345,7 @@ export default function Repay({ pair }: RepayProps) {
 
             {removeValueSet && (
                 <ExchangeRateCheckBox
-                    color="pink"
+                    color="blue"
                     pair={pair}
                     updateOracle={updateOracle}
                     setUpdateOracle={setUpdateOracle}
@@ -362,7 +362,7 @@ export default function Repay({ pair }: RepayProps) {
             )}
 
             <KashiApproveButton
-                color="pink"
+                color="blue"
                 content={(onCook: any) => (
                     <TokenApproveButton value={displayRepayValue} token={assetToken} needed={!useBentoRepay}>
                         <Button onClick={() => onCook(pair, onExecute)} disabled={actionDisabled}>
