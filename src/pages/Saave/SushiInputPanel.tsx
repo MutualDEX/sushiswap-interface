@@ -208,7 +208,7 @@ export default function CurrencyInputPanel({
                                         fontSize={14}
                                         style={{ display: 'inline', cursor: 'pointer' }}
                                     >
-                                        {i18n._(t`BGSP Balance: ${sushiBalance}`)}
+                                        {i18n._(t`BGSP' Balance: ${sushiBalance}`)}
                                     </TYPE.body>
                                 )}
                             </RowBetween>
