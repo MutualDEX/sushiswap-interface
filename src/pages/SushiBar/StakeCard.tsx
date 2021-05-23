@@ -180,7 +180,10 @@ export default function StakeCard({ sushiBalance, xSushiBalance }: StakeCardProp
                     <p className="text-large md:text-h5 font-bold text-high-emphesis">
                         {activeTab === 0 ? i18n._(t`Stake BGSP`) : i18n._(t`Unstake`)}
                     </p>
-                    <div className="border-gradient-r-blue-glow border-transparent border-solid border rounded-3xl px-4 md:px-3.5 py-1.5 md:py-0.5 text-high-emphesis text-xs font-medium md:text-caption md:font-normal">
+                    <div className="bg-cyan-blue md:bg-opacity-30
+                                    border border-secondary md:border-cyan-blue
+                                    rounded-2xl py-1 px-2 md:py-1 md:px-3 ml-3 md:ml-4
+                                    text-xs md:text-caption2 font-bold md:font-normal md:text-white">
                         {`1 xBGSP = ${xSushiPerSushi.toFixed(4)} BGSP`}
                     </div>
                 </div>
