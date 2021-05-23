@@ -98,7 +98,7 @@ const useFarms = () => {
                     (liquidityPosition: any) => liquidityPosition.pair.id === pair.id
                 )
 
-                const totalAllocPoint = 1000 //pool.miniChef.totalAllocPoint
+                const totalAllocPoint = 2000 //pool.miniChef.totalAllocPoint
 
                 const balance = Number(pool.slpBalance / 1e18)
                 const balanceUSD = (balance / Number(pair.totalSupply)) * Number(pair.reserveUSD)
