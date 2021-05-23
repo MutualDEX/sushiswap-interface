@@ -106,7 +106,7 @@ export default function Saave() {
                                 cornerRadiusBottomNone={true}
                             />
                             <AXSushiBalancePanel
-                                label={'aXSUSHI Balance'}
+                                label={'aXBGSP Balance'}
                                 disableCurrencySelect={true}
                                 id="ax-token-balance"
                                 cornerRadiusTopNone={true}
