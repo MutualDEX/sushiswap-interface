@@ -208,7 +208,7 @@ export default function CurrencyInputPanel({
                                         fontSize={14}
                                         style={{ display: 'inline', cursor: 'pointer' }}
                                     >
-                                        {i18n._(t`SUSHI Balance: ${sushiBalance}`)}
+                                        {i18n._(t`BGSP Balance: ${sushiBalance}`)}
                                     </TYPE.body>
                                 )}
                             </RowBetween>
@@ -258,7 +258,7 @@ export default function CurrencyInputPanel({
                                 }}
                             >
                                 <Aligner>
-                                    <StyledButtonName>SAAVE</StyledButtonName>
+                                    <StyledButtonName>SAVE</StyledButtonName>
                                 </Aligner>
                             </ButtonSelect>
                         )}
