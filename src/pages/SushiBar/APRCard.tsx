@@ -14,7 +14,7 @@ export default function APRCard() {
                 sushiData.sushi.priceUSD()
             ])
             const APR =
-                (((results[1][1].volumeUSD * 0.15) / results[0].totalSupply) * 365) / (results[0].ratio * results[2])
+                (((results[1][1].volumeUSD * 0.25) / results[0].totalSupply) * 365) / (results[0].ratio * results[2])
 
             setApr(APR)
         }
