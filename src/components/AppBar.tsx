@@ -349,7 +349,7 @@ function AppBar(): JSX.Element {
                                 {chainId &&
                                     [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC].includes(chainId) && (
                                         <NavLink id={`kashi-nav-link`} to={'/bento/kashi/lend'}>
-                                            {i18n._(t'Lending`)}
+                                            {i18n._(t'Lend`)}
                                         </NavLink>
                                     )}
                                 {chainId &&
