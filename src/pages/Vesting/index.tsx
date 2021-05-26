@@ -228,20 +228,21 @@ export default function ClaimModal() {
                                             {unclaimedAmount?.toFixed(4, { groupSeparator: ',' } ?? '-')}
                                         </TYPE.white>
                                         {account ? (
+                                        {account ? (
                                             <TYPE.white fontWeight={700} fontSize={14} color={theme.text3}>
                                                 {totalLocked ? (
-                                                  i18n._(
+                                                    i18n._(
                                                         t`Historical Total Locked: ${formattedNum(totalLocked)} BGSP`
                                                     )
                                                 ) : (
                                                     <Dots>{i18n._(t`Historical Total Locked: Fetching Total`)}</Dots>
-                                                )} 
+                                                )}
                                             </TYPE.white>
                                         ) : (
                                             <TYPE.white fontWeight={700} fontSize={14} color={theme.text3}>
                                                 {i18n._(t`Historical Total Locked: Connect Wallet`)}
                                             </TYPE.white>
-                                        )}
+                                        )} 
                                     </div>
 
                                     <ButtonPrimary
