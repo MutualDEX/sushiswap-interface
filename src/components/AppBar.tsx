@@ -51,7 +51,7 @@ function AppBar(): JSX.Element {
                                     <div className="hidden sm:block sm:ml-4">
                                         <div className="flex space-x-2">
                                             <NavLink id={`swap-nav-link`} to={'/swap'}>
-                                                {i18n._(t`Swap`)}
+                                                {i18n._(t`BigSwap`)}
                                             </NavLink>
                                             <NavLink
                                                 id={`pool-nav-link`}
@@ -64,7 +64,7 @@ function AppBar(): JSX.Element {
                                                     pathname.startsWith('/find')
                                                 }
                                             >
-                                                {i18n._(t`Pool`)}
+                                                {i18n._(t`BigPool`)}
                                             </NavLink>
                                             {chainId && [ChainId.MAINNET, ChainId.MATIC].includes(chainId) && (
                                                 <NavLink id={`yield-nav-link`} to={'/yield'}>
@@ -325,7 +325,7 @@ function AppBar(): JSX.Element {
                             </a> */}
 
                                 <NavLink id={`swap-nav-link`} to={'/swap'}>
-                                    {i18n._(t`Swap`)}
+                                    {i18n._(t`BigSwap`)}
                                 </NavLink>
                                 <NavLink
                                     id={`pool-nav-link`}
@@ -338,18 +338,18 @@ function AppBar(): JSX.Element {
                                         pathname.startsWith('/find')
                                     }
                                 >
-                                    {i18n._(t`Pool`)}
+                                    {i18n._(t`BigPool`)}
                                 </NavLink>
 
                                 {chainId && [ChainId.MAINNET, ChainId.MATIC].includes(chainId) && (
                                     <NavLink id={`yield-nav-link`} to={'/yield'}>
-                                        {i18n._(t`BigFarm`)}
+                                        {i18n._(t`BigYield`)}
                                     </NavLink>
                                 )}
                                 {chainId &&
                                     [ChainId.MAINNET, ChainId.KOVAN, ChainId.BSC, ChainId.MATIC].includes(chainId) && (
                                         <NavLink id={`kashi-nav-link`} to={'/bento/kashi/lend'}>
-                                            {i18n._(t`Kashi Lending`)}
+                                            {i18n._(t'Lending`)}
                                         </NavLink>
                                     )}
                                 {chainId &&
