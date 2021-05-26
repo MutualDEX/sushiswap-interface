@@ -124,7 +124,7 @@ function AppBar(): JSX.Element {
                                             library.provider.isMetaMask && (
                                                 <>
                                                     <QuestionHelper
-                                                        text={i18n._(t`Add xSushi to your Metamask wallet`)}
+                                                        text={i18n._(t`Add xBGSP to your Metamask wallet`)}
                                                     >
                                                         <div
                                                             className="hidden sm:inline-block rounded-md bg-dark-900 hover:bg-dark-800 cursor-pointer"
@@ -134,7 +134,7 @@ function AppBar(): JSX.Element {
                                                                     options: {
                                                                         address:
                                                                             '0x8798249c2e607446efb7ad49ec89dd1865ff4272',
-                                                                        symbol: 'XSUSHI',
+                                                                        symbol: 'XBGSP',
                                                                         decimals: 18,
                                                                         image:
                                                                             'https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272/logo.png'
@@ -185,7 +185,7 @@ function AppBar(): JSX.Element {
                                             library &&
                                             library.provider.isMetaMask && (
                                                 <>
-                                                    <QuestionHelper text={i18n._(t`Add Sushi to your Metamask wallet`)}>
+                                                    <QuestionHelper text={i18n._(t`Add BGSP to your Metamask wallet`)}>
                                                         <div
                                                             className="hidden sm:inline-block rounded-md bg-dark-900 hover:bg-dark-800 cursor-pointer"
                                                             onClick={() => {
@@ -208,7 +208,7 @@ function AppBar(): JSX.Element {
                                                                     type: 'ERC20',
                                                                     options: {
                                                                         address: address,
-                                                                        symbol: 'SUSHI',
+                                                                        symbol: 'BGSP',
                                                                         decimals: 18,
                                                                         image:
                                                                             'https://raw.githubusercontent.com/sushiswap/assets/master/blockchains/ethereum/assets/0x6B3595068778DD592e39A122f4f5a5cF09C90fE2/logo.png'
