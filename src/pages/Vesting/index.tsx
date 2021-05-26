@@ -230,10 +230,12 @@ export default function ClaimModal() {
                                         {account ? (
                                             <TYPE.white fontWeight={700} fontSize={14} color={theme.text3}>
                                                 {totalLocked ? (
-                                                    i18n._(t`Historical Total Locked: ${formattedNum(totalLocked)} BGSP`                                                   
+                                                  i18n._(
+                                                        t`Historical Total Locked: ${formattedNum(totalLocked)} BGSP`
+                                                    )
                                                 ) : (
                                                     <Dots>{i18n._(t`Historical Total Locked: Fetching Total`)}</Dots>
-                                                )}
+                                                )} 
                                             </TYPE.white>
                                         ) : (
                                             <TYPE.white fontWeight={700} fontSize={14} color={theme.text3}>
