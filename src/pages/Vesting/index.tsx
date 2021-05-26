@@ -228,7 +228,6 @@ export default function ClaimModal() {
                                             {unclaimedAmount?.toFixed(4, { groupSeparator: ',' } ?? '-')}
                                         </TYPE.white>
                                         {account ? (
-                                        {account ? (
                                             <TYPE.white fontWeight={700} fontSize={14} color={theme.text3}>
                                                 {totalLocked ? (
                                                     i18n._(
