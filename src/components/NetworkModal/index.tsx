@@ -32,7 +32,7 @@ const PARAMS: {
         rpcUrls: ['https://mainnet.infura.io/v3'],
         blockExplorerUrls: ['https://etherscan.com']
     },
-    [ChainId.FANTOM]: {
+    /*[ChainId.FANTOM]: {
         chainId: '0xfa',
         chainName: 'Fantom',
         nativeCurrency: {
@@ -41,7 +41,7 @@ const PARAMS: {
             decimals: 18
         },
         rpcUrls: ['https://rpcapi.fantom.network'],
-        blockExplorerUrls: ['https://ftmscan.com']
+        blockExplorerUrls: ['https://ftmscan.com']*/
     },
     [ChainId.BSC]: {
         chainId: '0x38',
@@ -65,7 +65,7 @@ const PARAMS: {
         rpcUrls: ['https://rpc-mainnet.maticvigil.com'], //['https://matic-mainnet.chainstacklabs.com/'],
         blockExplorerUrls: ['https://explorer-mainnet.maticvigil.com']
     },
-    [ChainId.HECO]: {
+    /*[ChainId.HECO]: {
         chainId: '0x80',
         chainName: 'Heco',
         nativeCurrency: {
@@ -74,9 +74,9 @@ const PARAMS: {
             decimals: 18
         },
         rpcUrls: ['https://http-mainnet.hecochain.com'],
-        blockExplorerUrls: ['https://hecoinfo.com']
+        blockExplorerUrls: ['https://hecoinfo.com']*/
     },
-    [ChainId.XDAI]: {
+    /*[ChainId.XDAI]: {
         chainId: '0x64',
         chainName: 'xDai',
         nativeCurrency: {
@@ -85,9 +85,9 @@ const PARAMS: {
             decimals: 18
         },
         rpcUrls: ['https://rpc.xdaichain.com'],
-        blockExplorerUrls: ['https://blockscout.com/poa/xdai']
+        blockExplorerUrls: ['https://blockscout.com/poa/xdai']*/
     },
-    [ChainId.HARMONY]: {
+    /*[ChainId.HARMONY]: {
         chainId: '0x63564C40',
         chainName: 'Harmony One',
         nativeCurrency: {
@@ -96,7 +96,7 @@ const PARAMS: {
             decimals: 18
         },
         rpcUrls: ['https://api.s0.t.hmny.io'],
-        blockExplorerUrls: ['https://explorer.harmony.one/']
+        blockExplorerUrls: ['https://explorer.harmony.one/']*/
     },
     [ChainId.AVALANCHE]: {
         chainId: '0xA86A',
@@ -109,7 +109,7 @@ const PARAMS: {
         rpcUrls: ['https://api.avax.network/ext/bc/C/rpc'],
         blockExplorerUrls: ['https://explorer.avax.network']
     },
-    [ChainId.OKEX]: {
+    /*[ChainId.OKEX]: {
         chainId: '0x42',
         chainName: 'OKEx',
         nativeCurrency: {
@@ -118,7 +118,7 @@ const PARAMS: {
             decimals: 18
         },
         rpcUrls: ['https://exchainrpc.okex.org'],
-        blockExplorerUrls: ['https://www.oklink.com/okexchain']
+        blockExplorerUrls: ['https://www.oklink.com/okexchain']*/
     }
 }
 
@@ -133,21 +133,21 @@ export default function NetworkModal(): JSX.Element | null {
         <Modal isOpen={networkModalOpen} onDismiss={toggleNetworkModal}>
             <ModalHeader onClose={toggleNetworkModal} title="Select a Network" />
             <div className="text-lg text-primary mb-6">
-                You are currently browsing <span className="font-bold text-pink">SUSHI</span>
+                You are currently browsing <span className="font-bold text-pink">BigSwap</span>
                 <br /> on the <span className="font-bold text-blue">{NETWORK_LABEL[chainId]}</span> network
             </div>
 
             <div className="flex flex-col space-y-5 overflow-y-auto">
                 {[
                     ChainId.MAINNET,
-                    ChainId.FANTOM,
+                    /*ChainId.FANTOM,*/
                     ChainId.BSC,
                     ChainId.MATIC,
-                    ChainId.HECO,
-                    ChainId.XDAI,
-                    ChainId.HARMONY,
+                   /* ChainId.HECO,*/
+                   /* ChainId.XDAI,*/
+                   /* ChainId.HARMONY,*/
                     ChainId.AVALANCHE,
-                    ChainId.OKEX
+                   /* ChainId.OKEX*/
                 ].map((key: ChainId, i: number) => {
                     if (chainId === key) {
                         return (
