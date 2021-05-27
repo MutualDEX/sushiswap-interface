@@ -41,8 +41,8 @@ const PARAMS: {
             decimals: 18
         },
         rpcUrls: ['https://rpcapi.fantom.network'],
-        blockExplorerUrls: ['https://ftmscan.com']*/
-    },
+        blockExplorerUrls: ['https://ftmscan.com']
+    },*/
     [ChainId.BSC]: {
         chainId: '0x38',
         chainName: 'Binance Smart Chain',
@@ -74,8 +74,8 @@ const PARAMS: {
             decimals: 18
         },
         rpcUrls: ['https://http-mainnet.hecochain.com'],
-        blockExplorerUrls: ['https://hecoinfo.com']*/
-    },
+        blockExplorerUrls: ['https://hecoinfo.com']
+    },*/
     /*[ChainId.XDAI]: {
         chainId: '0x64',
         chainName: 'xDai',
@@ -85,8 +85,8 @@ const PARAMS: {
             decimals: 18
         },
         rpcUrls: ['https://rpc.xdaichain.com'],
-        blockExplorerUrls: ['https://blockscout.com/poa/xdai']*/
-    },
+        blockExplorerUrls: ['https://blockscout.com/poa/xdai']
+    },*/
     /*[ChainId.HARMONY]: {
         chainId: '0x63564C40',
         chainName: 'Harmony One',
@@ -96,8 +96,8 @@ const PARAMS: {
             decimals: 18
         },
         rpcUrls: ['https://api.s0.t.hmny.io'],
-        blockExplorerUrls: ['https://explorer.harmony.one/']*/
-    },
+        blockExplorerUrls: ['https://explorer.harmony.one/']
+    },*/
     [ChainId.AVALANCHE]: {
         chainId: '0xA86A',
         chainName: 'Avalanche',
@@ -118,8 +118,8 @@ const PARAMS: {
             decimals: 18
         },
         rpcUrls: ['https://exchainrpc.okex.org'],
-        blockExplorerUrls: ['https://www.oklink.com/okexchain']*/
-    }
+        blockExplorerUrls: ['https://www.oklink.com/okexchain']
+    }*/
 }
 
 export default function NetworkModal(): JSX.Element | null {
